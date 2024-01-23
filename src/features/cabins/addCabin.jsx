@@ -6,20 +6,16 @@ import CabinTable from "./CabinTable";
 
 export const AddCabin = () => {
   return (
-    <Modal>
-      <Modal.Open opens="cabins-form">
-        <Button> Add new Cabin</Button>
-      </Modal.Open>
-      <Modal.Window name="cabins-form">
-        <CreateCabinForm />
-      </Modal.Window>
-      <Modal.Open opens="table">
-        <Button> Show table</Button>
-      </Modal.Open>
-      <Modal.Window name="table">
-        <CabinTable />
-      </Modal.Window>
-    </Modal>
+    <div>
+      <Modal>
+        <Modal.Open opens="cabins-form">
+          <Button> Add new Cabin</Button>
+        </Modal.Open>
+        <Modal.Window name="cabins-form">
+          <CreateCabinForm />
+        </Modal.Window>
+      </Modal>
+    </div>
   );
 };
 // export const AddCabin = () => {
